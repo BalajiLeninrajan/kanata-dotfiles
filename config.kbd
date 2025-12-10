@@ -3,24 +3,24 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   caps a    s    d    f    g    h    j    k    l    ;    '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           spc            ralt rmet rctl
+  lctl lalt lmet           spc            rmet ralt rctl
 )
 
 (defvar
-  tap-time 150
-  hold-time 150
+  tap-time 200
+  hold-time 200
 )
 
 (defalias
   ;; --- Home Row Mods ---
   a (tap-hold $tap-time $hold-time a lctl)
-  s (tap-hold $tap-time $hold-time s lmet)
-  d (tap-hold $tap-time $hold-time d lalt)
+  s (tap-hold $tap-time $hold-time s lalt)
+  d (tap-hold $tap-time $hold-time d lmet)
   f (tap-hold $tap-time $hold-time f lsft)
 
   j (tap-hold $tap-time $hold-time j rsft)
-  k (tap-hold $tap-time $hold-time k ralt)
-  l (tap-hold $tap-time $hold-time l rmet)
+  k (tap-hold $tap-time $hold-time k rmet)
+  l (tap-hold $tap-time $hold-time l ralt)
   ; (tap-hold $tap-time $hold-time ; rctl)
 
   ;; --- Special Keys ---
@@ -37,7 +37,7 @@
   tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
   @cap @a   @s   @d   @f   g    h    @j   @k   @l   @;   '    ret
   lsft z    x    c    v    b    n    m    ,    .    /    rsft
-  lctl lmet lalt           @spc           ralt rmet rctl
+  lctl lalt lmet           @spc           rmet ralt rctl
 )
 
 (deflayer nav
