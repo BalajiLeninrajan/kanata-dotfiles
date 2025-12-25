@@ -28,7 +28,7 @@
   ; (tap-hold $tap-time $hold-time ; rctl)
 
   ;; --- Special Keys ---
-  spc (tap-hold $tap-time $hold-time spc (layer-toggle nav))
+  spc (tap-hold $tap-time $hold-time spc (layer-toggle utl))
   cap (fork esc caps (lsft rsft))
 
   ;; --- Navigation Macros ---
@@ -44,9 +44,9 @@
   lctl lmet lalt           @spc           ralt rmet rctl
 )
 
-(deflayer nav
-  _    _    _    _    _    _    _    _    _    _    _    _    _    _
-  _    _    @fwd _    _    _    _    pgup _    _    _    _    _    _
+(deflayer utl
+  _    _    _    _    _    _    _    _    _    _    mute vold volu _
+  _    _    @fwd _    _    _    _    pgup _    _    pp   prev next _
   _    _    _    pgdn _    _    left down up   right _    _    _
   _    _    _    _    _    @bwd _    _    _    _    _    _
   _    _    _              _              _    _    _
