@@ -27,6 +27,10 @@
   l (tap-hold $tap-time $hold-time l rmet)
   ; (tap-hold $tap-time $hold-time ; rctl)
 
+  ;; --- Layer Helpers ---
+  hrm (layer-switch base)
+  nhrm (layer-switch qwerty)
+
   ;; --- Special Keys ---
   spc (tap-hold $tap-time $hold-time spc (layer-toggle utl))
   cap (fork esc caps (lsft rsft))
@@ -45,9 +49,17 @@
 )
 
 (deflayer utl
-  _    _    _    _    _    _    _    _    _    _    mute vold volu _
+  _    @hrm @nhrm _   _    _    _    _    _    _    mute vold volu _
   _    _    @fwd _    _    _    _    pgup _    _    pp   prev next _
   _    _    _    pgdn _    _    left down up   right _    _    _
   _    _    _    _    _    @bwd _    _    _    _    _    _
   _    _    _              _              _    _    _
+)
+
+(deflayer qwerty
+  grv  1    2    3    4    5    6    7    8    9    0    -    =    bspc
+  tab  q    w    e    r    t    y    u    i    o    p    [    ]    \
+  @cap a    s    d    f    g    h    j    k    l    ;    '    ret
+  lsft z    x    c    v    b    n    m    ,    .    /    rsft
+  lctl lmet lalt           @spc            ralt rmet rctl
 )
