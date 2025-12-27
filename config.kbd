@@ -63,7 +63,7 @@
 
 (deflayer utl
   _    @hrm @nhrm _   _    _    _    _    _    _    mute vold volu _
-  _    _    @fwd _    _    _    _    -    =    _     pp   prev next _
+  _    _    @fwd [    ]    S-9  S-0  -    =    _     pp   prev next _
   _    _    _    _    _    _    left down up   right _    _    _
   _    _    _    _    _    @bwd _    _    _    _    _    _
   _    _    _              _              _    _    _
